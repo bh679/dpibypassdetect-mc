@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[51,)"
+license="${mod_license}"
+issueTrackerURL="https://github.com/bh679/dpibypassdetect-mc/issues"
+
+[[mods]]
+modId="dpibypassdetect"
+version="${version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+displayURL="https://github.com/bh679/dpibypassdetect-mc"
+# Client-side library: a server never needs it, and a client with it can join a server without it.
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.dpibypassdetect]]
+    modId="forge"
+    mandatory=true
+    versionRange="[51,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dpibypassdetect]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
